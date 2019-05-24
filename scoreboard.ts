@@ -1,8 +1,17 @@
 class Team {
+  name: string;
+
+  constructor(name) {
+    this.name = name;
+  }
+
   generateLineup() {
-    return "Lineup goes here...";
+    return this.name;
   }
 }
 
-const astros = new Team();
+const astros = new Team("Astros");
 astros.generateLineup(); //?
+
+const blueJays = new Team("Blue Jays");
+blueJays.generateLineup(); //?
