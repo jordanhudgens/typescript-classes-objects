@@ -1,9 +1,13 @@
-import Auth from "../auth.js";
+import Auth, { Login } from "../auth.js";
 import "jasmine";
 
-describe("heat map data shape", () => {
-  it("should have an attribute called coldZones", () => {
-    const x = Auth;
-    expect(true).toBe(true);
+describe("auth", () => {
+  it("should be able to create a Login object with a email and password", () => {
+    const user = new Login({
+      email: "admin@example.com",
+      password: "secret123"
+    });
+    expect(user.email).toBe("admin@example.com");
+    expect(user.password).toBe("secret123");
   });
 });

@@ -7,6 +7,7 @@ var Login = /** @class */ (function () {
     }
     return Login;
 }());
+exports.Login = Login;
 var Auth = /** @class */ (function () {
     function Auth(args) {
         this.user = args.user;
