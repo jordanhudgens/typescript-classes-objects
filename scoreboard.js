@@ -4,7 +4,10 @@ var Team = /** @class */ (function () {
         this.players = args.players;
     }
     Team.prototype.generateLineup = function () {
-        return this.name + " - " + this.players.join(", ");
+        var playersWithOrderNumber = this.players.map(function (player, idx) {
+            return "<div>" + (idx + 1) + " - " + player + "</div>";
+        });
+        return playersWithOrderNumber.join("");
     };
     return Team;
 }());
@@ -17,9 +20,4 @@ var blueJays = new Team({
     players: ["Vlad", "Smoak", "Tellez", "Sogard"],
     name: "Blue Jays"
 });
-blueJays.generateLineup(); //?
-var boston = new Team({
-    name: "Boston",
-    players: ["Betts", "Martinez"]
-});
-boston.generateLineup(); //?
+console.log(blueJays.generateLineup()); //?

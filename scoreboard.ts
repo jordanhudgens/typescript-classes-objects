@@ -12,8 +12,12 @@ class Team {
     this.players = args.players;
   }
 
-  generateLineup() {
-    return `${this.name} - ${this.players.join(", ")}`;
+  generateLineup(): string {
+    const playersWithOrderNumber = this.players.map((player, idx) => {
+      return `<div>${idx + 1} - ${player}</div>`;
+    });
+
+    return playersWithOrderNumber.join("");
   }
 }
 
@@ -27,11 +31,5 @@ const blueJays = new Team({
   players: ["Vlad", "Smoak", "Tellez", "Sogard"],
   name: "Blue Jays"
 });
-blueJays.generateLineup(); //?
 
-const boston = new Team({
-  name: "Boston",
-  players: ["Betts", "Martinez"]
-});
-
-boston.generateLineup(); //?
+console.log(blueJays.generateLineup()); //?
