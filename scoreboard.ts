@@ -3,3 +3,5 @@ class Team {
     return "Lineup will go here...";
   }
 }
+
+const astros = new Team();
