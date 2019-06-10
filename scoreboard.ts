@@ -10,5 +10,8 @@ class Team {
   }
 }
 
-const astros = new Team();
+const astros = new Team("Astros");
 astros.generateLineup(); //?
+
+const blueJays = new Team("Blue Jays");
+blueJays.generateLineup(); //?
