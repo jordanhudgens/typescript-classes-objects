@@ -7,9 +7,9 @@ class Team {
   name: string;
   players: string[];
 
-  constructor(name, players) {
-    this.name = name;
-    this.players = players;
+  constructor(args: ITeam) {
+    this.name = args.name;
+    this.players = args.players;
   }
 
   generateLineup() {
