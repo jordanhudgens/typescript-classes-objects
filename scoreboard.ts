@@ -1,8 +1,10 @@
 class Team {
   name: string;
+  players: string[];
 
-  constructor(name) {
+  constructor(name, players) {
     this.name = name;
+    this.players = players;
   }
 
   generateLineup() {
