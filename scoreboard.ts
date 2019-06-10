@@ -23,10 +23,13 @@ const astros = new Team({
   players: astrosPlayers
 });
 
-// astros.generateLineup(); //?
-// astros.name; //?
+astros.generateLineup(); //?
+astros.name; //?
 
-// const blueJaysPlayers = ["Vlad", "Smoak", "Tellez", "Sogard"];
-// const blueJays = new Team("Blue Jays", blueJaysPlayers);
-// blueJays.generateLineup(); //?
-// blueJays.name; //?
+const blueJaysPlayers = ["Vlad", "Smoak", "Tellez", "Sogard"];
+const blueJays = new Team({
+  name: "Blue Jays",
+  players: blueJaysPlayers
+});
+blueJays.generateLineup(); //?
+blueJays.name; //?
