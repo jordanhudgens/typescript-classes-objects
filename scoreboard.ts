@@ -16,3 +16,4 @@ astros.name; //?
 
 const blueJays = new Team("Blue Jays");
 blueJays.generateLineup(); //?
+blueJays.name; //?
