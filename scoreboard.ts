@@ -12,6 +12,7 @@ class Team {
 
 const astros = new Team("Astros");
 astros.generateLineup(); //?
+astros.name; //?
 
 const blueJays = new Team("Blue Jays");
 blueJays.generateLineup(); //?
