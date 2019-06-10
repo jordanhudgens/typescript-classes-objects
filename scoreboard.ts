@@ -5,3 +5,4 @@ class Team {
 }
 
 const astros = new Team();
+astros.generateLineup(); //?
