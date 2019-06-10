@@ -12,8 +12,12 @@ class Team {
     this.players = args.players;
   }
 
-  generateLineup() {
-    return this.players.join(", ");
+  generateLineup(): string {
+    const playersWithOrderNumber = this.players.map((player, idx) => {
+      return `<div>${idx + 1} - ${player}</div>`;
+    });
+
+    return playersWithOrderNumber.join("");
   }
 }
 
