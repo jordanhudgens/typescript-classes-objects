@@ -1,3 +1,5 @@
+interface ITeam {}
+
 class Team {
   name: string;
   players: string[];
