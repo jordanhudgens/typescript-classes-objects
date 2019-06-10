@@ -1,4 +1,7 @@
-interface ITeam {}
+interface ITeam {
+  name: string;
+  players: string[];
+}
 
 class Team {
   name: string;
