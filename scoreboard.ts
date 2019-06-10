@@ -12,10 +12,12 @@ class Team {
   }
 }
 
-const astros = new Team("Astros", ["Altuve", "Bregman", "Correa", "Springer"]);
+const astrosPlayers = ["Altuve", "Bregman", "Correa", "Springer"];
+const astros = new Team("Astros", astrosPlayers);
 astros.generateLineup(); //?
 astros.name; //?
 
-const blueJays = new Team("Blue Jays", ["Vlad", "Smoak", "Tellez", "Sogard"]);
+const blueJaysPlayers = ["Vlad", "Smoak", "Tellez", "Sogard"];
+const blueJays = new Team("Blue Jays", blueJaysPlayers);
 blueJays.generateLineup(); //?
 blueJays.name; //?
