@@ -8,14 +8,14 @@ class Team {
   }
 
   generateLineup() {
-    return "Lineup will go here...";
+    return this.players.join(", ");
   }
 }
 
-const astros = new Team("Astros");
+const astros = new Team("Astros", ["Altuve", "Bregman", "Correa", "Springer"]);
 astros.generateLineup(); //?
 astros.name; //?
 
-const blueJays = new Team("Blue Jays");
+const blueJays = new Team("Blue Jays", ["Vlad", "Smoak", "Tellez", "Sogard"]);
 blueJays.generateLineup(); //?
 blueJays.name; //?
