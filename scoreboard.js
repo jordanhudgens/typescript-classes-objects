@@ -32,3 +32,8 @@ var Scoreboard = /** @class */ (function () {
     };
     return Scoreboard;
 }());
+var todaysGame = new Scoreboard({
+    date: "5/24/19",
+    homeTeam: astros,
+    awayTeam: blueJays
+});

@@ -60,3 +60,9 @@ class Scoreboard {
     `;
   }
 }
+
+const todaysGame = new Scoreboard({
+  date: "5/24/19",
+  homeTeam: astros,
+  awayTeam: blueJays
+});
