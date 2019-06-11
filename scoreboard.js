@@ -16,11 +16,13 @@ var astros = new Team({
     name: "Astros",
     players: astrosPlayers
 });
-astros.generateLineup(); //?
-astros.name; //?
 var blueJaysPlayers = ["Vlad", "Smoak", "Tellez", "Sogard"];
 var blueJays = new Team({
     name: "Blue Jays",
     players: blueJaysPlayers
 });
-console.log(blueJays.generateLineup());
+var Scoreboard = /** @class */ (function () {
+    function Scoreboard() {
+    }
+    return Scoreboard;
+}());

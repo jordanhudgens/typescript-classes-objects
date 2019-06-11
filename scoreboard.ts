@@ -27,13 +27,14 @@ const astros = new Team({
   players: astrosPlayers
 });
 
-astros.generateLineup(); //?
-astros.name; //?
-
 const blueJaysPlayers = ["Vlad", "Smoak", "Tellez", "Sogard"];
 const blueJays = new Team({
   name: "Blue Jays",
   players: blueJaysPlayers
 });
 
-console.log(blueJays.generateLineup());
+class Scoreboard {
+  homeTeam: Team;
+  awayTeam: Team;
+  date: string;
+}
