@@ -33,6 +33,12 @@ const blueJays = new Team({
   players: blueJaysPlayers
 });
 
+interface IScoreboard {
+  homeTeam: Team;
+  awayTeam: Team;
+  date: string;
+}
+
 class Scoreboard {
   homeTeam: Team;
   awayTeam: Team;
