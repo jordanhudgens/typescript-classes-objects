@@ -43,4 +43,10 @@ class Scoreboard {
   homeTeam: Team;
   awayTeam: Team;
   date: string;
+
+  constructor(args: IScoreboard) {
+    this.homeTeam = args.homeTeam;
+    this.awayTeam = args.awayTeam;
+    this.date = args.date;
+  }
 }

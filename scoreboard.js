@@ -22,7 +22,10 @@ var blueJays = new Team({
     players: blueJaysPlayers
 });
 var Scoreboard = /** @class */ (function () {
-    function Scoreboard() {
+    function Scoreboard(args) {
+        this.homeTeam = args.homeTeam;
+        this.awayTeam = args.awayTeam;
+        this.date = args.date;
     }
     return Scoreboard;
 }());
