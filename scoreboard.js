@@ -37,3 +37,4 @@ var todaysGame = new Scoreboard({
     homeTeam: astros,
     awayTeam: blueJays
 });
+console.log(todaysGame.scoreboardHtml());
