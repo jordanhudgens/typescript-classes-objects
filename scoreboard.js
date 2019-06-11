@@ -27,5 +27,8 @@ var Scoreboard = /** @class */ (function () {
         this.awayTeam = args.awayTeam;
         this.date = args.date;
     }
+    Scoreboard.prototype.scoreboardHtml = function () {
+        return "\n    <h1>" + this.date + "</h1>\n    <h2>" + this.homeTeam.name + "</h2>\n    <div>" + this.homeTeam.generateLineup() + "</div>\n    <h2>" + this.awayTeam.name + "</h2>\n    <div>" + this.awayTeam.generateLineup() + "</div>\n    ";
+    };
     return Scoreboard;
 }());

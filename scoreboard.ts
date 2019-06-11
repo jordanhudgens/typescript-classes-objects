@@ -49,4 +49,14 @@ class Scoreboard {
     this.awayTeam = args.awayTeam;
     this.date = args.date;
   }
+
+  scoreboardHtml(): string {
+    return `
+    <h1>${this.date}</h1>
+    <h2>${this.homeTeam.name}</h2>
+    <div>${this.homeTeam.generateLineup()}</div>
+    <h2>${this.awayTeam.name}</h2>
+    <div>${this.awayTeam.generateLineup()}</div>
+    `;
+  }
 }
