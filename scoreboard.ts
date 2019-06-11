@@ -35,5 +35,5 @@ const blueJays = new Team({
   name: "Blue Jays",
   players: blueJaysPlayers
 });
-blueJays.generateLineup(); //?
-blueJays.name; //?
+
+console.log(blueJays.generateLineup());
